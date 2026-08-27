@@ -1,11 +1,13 @@
 body {
-    background: linear-gradient(90deg, #0c1e50 100%, #0f172a 70%, #020617 40%);
+    background-image: linear-gradient(90deg, #0c1e50 100%, #0f172a 70%, #020617 70%);
+    overflow-x: hidden;
 }
 
 .boot-screen h1 {
+
     font-size: 6rem;
     margin-top: 0%;
-    text-align: center;
+    text-align: CENTER;
     background-image: linear-gradient(90deg, rgb(64, 206, 64), rgb(90, 90, 206), white, white);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -13,14 +15,25 @@ body {
     font-family:'Courier New';
 }
     
-.boot-text{
+#boot-text{
     color: rgb(0, 128, 0);
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 47%;
+    transform: scale(1);
+    rotate: 0deg;
+    margin: 1%;
+    
 }
 
 .enter {
     border-radius: 1rem;
    margin-left: 46%;
    padding: 1rem 2rem;
+}
+.boot-screen {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
